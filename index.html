@@ -715,10 +715,10 @@ Media Planner
                 <i class="fas fa-xmark fa-2x"></i>
               </icon>
             </div>
-            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="name" placeholder="Your Name" required minlength="6">
             <input type="email" id="email" placeholder="Email id" required>
-            <input type="text" id="phone" placeholder="Mobile Number" >
-            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+            <input type="text" id="phone" placeholder="Mobile Number" required minlength="10">
+            <textarea id="message" rows="4" placeholder="How can we help you?" required></textarea>
             <div class="btn-group">
               <button type="submit" id="emailButton" class="btns send" onclick="sendEmail(event)" disabled>Send</button>
               <button type="button" class="btns cancel" onclick="closeForm()">Close</button>

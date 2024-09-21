@@ -979,6 +979,18 @@ form textarea {
   }
 }
 
+form .btns {
+  color: #fff;
+  background: #248277;
+  border: 0.1rem solid #ffffff;
+}
+
+form .btns:hover {
+  color: #248277;
+  border: 0.1rem solid #248277;
+  background: none;
+}
+
 .feedback-header {
   width: 100%;
   margin: 0.5rem 0.75rem;
@@ -990,6 +1002,7 @@ form textarea {
 .iconStyles {
   color: #248277;
   cursor: pointer;
+  margin-right: 1rem;
 }
 
 /* Backdrop styles */
@@ -1003,4 +1016,15 @@ form textarea {
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
   z-index: 10;
   display: none; /* Initially hidden */
+}
+
+/* When the input is invalid */
+input:invalid,
+textarea:invalid {
+  border: 1px solid red;
+}
+
+input:valid,
+textarea:valid {
+  border: 1px solid teal;
 }
