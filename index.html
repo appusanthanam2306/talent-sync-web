@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete Responsive Furniture Webite Using HTML CSS & JS</title>
+    <!-- fontawesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- swiper js cdn lnk -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section starts -->
+
+    <header>
+      <div class="header-top">
+        <div class="fas fa-bars" id="menu"></div>
+
+        <a href="#" class="logo"><i class="fas fa-couch"></i> TS</a>
+        <div class="social">
+          <a href="#" class="fab fa-facebook"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-pinterest"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+        </div>
+        </div>
+      </div>
+
+      <div class="header-main">
+        <nav class="navbar">
+          <a href="#home">home</a>
+          <a href="#about">about</a>
+          <a href="#services">services</a>
+          <a href="#contact">contact</a>
+          
+        </nav>
+      </div>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3 >Welcome to Talent Sync</h3>
+        <p>
+             – your ultimate platform for connecting job seekers with top employers and offering expert IT and HR outsourcing solutions.
+            Let us help you find the perfect match for your career or business needs!
+        </p>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts -->
+
+    <section class="about" id="about">
+      <h1 class="heading">about <span>us</span></h1>
+
+      <div class="row">
+       
+
+        <div class="content">
+          <!-- <h3>Crafting Furniture</h3> -->
+          <p>
+            Welcome to Talent Sync – your trusted partner in career connections and workforce solutions. Whether you're a job seeker looking to elevate your career or a company in search of top-tier talent, Talent Sync is here to bridge the gap. Our platform allows job seekers to upload their CVs effortlessly, making it easier for employers to find the right fit for their teams.
+          </p> 
+          <p>
+            At Talent Sync, we don't just stop at job postings – we go beyond with specialized IT and HR outsourcing services. Our expert outsourcing solutions help businesses streamline their operations by handling their IT and HR functions, allowing them to focus on growth and innovation.
+          </p>
+          <p>
+             For companies, Talent Sync is your go-to portal to share hiring requests and access a pool of qualified candidates. With our industry expertise and intuitive platform, we make the hiring process seamless, fast, and efficient.
+          </p>
+          <p>
+            For job seekers, we’re more than just a job board. We’re your gateway to a brighter future, connecting you with opportunities that match your skills and aspirations.
+          </p>
+          <p>
+            Explore the possibilities with Talent Sync today, and let us sync talent with opportunity!
+         </p>
+          
+          <a href="#" class="btns">read more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- services section starts -->
+
+    <section class="services" id="services">
+      <h1 class="heading">our <span>services</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <data class="card-number" value="01">01</data>
+          <h3>Job Portal</h3>
+          <p>
+            Upload your CV and connect with leading employers, or find top talent to fill your open positions quickly and efficiently.
+          </p>
+          <div class="btns" onclick="openForm()"> Register</div>
+          
+        </div>
+
+        <div class="box">
+          <data class="card-number" value="02">02</data>
+          <h3>IT Outsourcing</h3>
+          <p>
+            Streamline your business operations with our reliable IT outsourcing services, designed to meet your technology needs and drive growth.
+          </p>
+        </div>
+
+        <div class="box">
+          <data class="card-number" value="03">03</data>
+          <h3>HR Outsourcing</h3>
+          <p>
+            Let us handle your HR functions, from recruitment to employee management, so you can focus on scaling your business while we manage the workforce.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section ends -->
+
+    <!-- Company Section Start-->
+
+    <section class="review" id="review">
+      <h1 class="heading">our <span>services</span></h1>
+      <div class="row">
+        
+          <!-- <div class="swiper review-slider">
+
+              <div class="swiper-wrapper">
+
+                  <div class="swiper-slide slide">
+                      <h2 class="heading">client's review</h2>
+                      <i class="fas fa-quote-right"></i>
+                      <div class="user">
+                          <img src="images/pic-1.png" alt="">
+                          <div class="user-info">
+                              <h3>john lax</h3>
+                              <div class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet beatae voluptatem vel hic mollitia magnam facilis quisquam quasi nemo in odit consectetur maxime.</p>
+                  </div>
+
+                  <div class="swiper-slide slide">
+                      <h2 class="heading">client's review</h2>
+                      <i class="fas fa-quote-right"></i>
+                      <div class="user">
+                          <img src="images/pic-2.png" alt="">
+                          <div class="user-info">
+                              <h3>john lax</h3>
+                              <div class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet beatae voluptatem vel hic mollitia magnam facilis quisquam quasi nemo in odit consectetur maxime.</p>
+                  </div>
+
+                  <div class="swiper-slide slide">
+                      <h2 class="heading">client's review</h2>
+                      <i class="fas fa-quote-right"></i>
+                      <div class="user">
+                          <img src="images/pic-3.png" alt="">
+                          <div class="user-info">
+                              <h3>john lax</h3>
+                              <div class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet beatae voluptatem vel hic mollitia magnam facilis quisquam quasi nemo in odit consectetur maxime.</p>
+                  </div>
+
+                  <div class="swiper-slide slide">
+                      <h2 class="heading">client's review</h2>
+                      <i class="fas fa-quote-right"></i>
+                      <div class="user">
+                          <img src="images/pic-4.png" alt="">
+                          <div class="user-info">
+                              <h3>john lax</h3>
+                              <div class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet beatae voluptatem vel hic mollitia magnam facilis quisquam quasi nemo in odit consectetur maxime.</p>
+                  </div>
+
+                  <div class="swiper-slide slide">
+                      <h2 class="heading">client's review</h2>
+                      <i class="fas fa-quote-right"></i>
+                      <div class="user">
+                          <img src="images/pic-5.png" alt="">
+                          <div class="user-info">
+                              <h3>john lax</h3>
+                              <div class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet beatae voluptatem vel hic mollitia magnam facilis quisquam quasi nemo in odit consectetur maxime.</p>
+                  </div>
+
+                  <div class="swiper-slide slide">
+                      <h2 class="heading">client's review</h2>
+                      <i class="fas fa-quote-right"></i>
+                      <div class="user">
+                          <img src="images/pic-6.png" alt="">
+                          <div class="user-info">
+                              <h3>john lax</h3>
+                              <div class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet beatae voluptatem vel hic mollitia magnam facilis quisquam quasi nemo in odit consectetur maxime.</p>
+                  </div>
+
+              </div>
+
+              <div class="swiper-pagination"></div>
+
+          </div> -->
+
+          x
+          <div class="accordion-container">
+
+              <div class="accordion active">
+                  <div class="accordion-heading">
+                      <h3>1. Information Technology (IT)</h3>
+                      <i class="fas fa-angle-down"></i>
+                  </div>
+                  <p class="accordion-content">
+                    Software Developer,
+System Administrator,
+IT Support Specialist,
+Network Engineer,
+Data Scientist,
+Cybersecurity Analyst,
+DevOps Engineer,
+Cloud Architect,
+IT Project Manager and
+Database Administrator
+                  </p>
+              </div>
+
+              
+              <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>2. Human Resources (HR)</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                  HR Generalist,
+HR Manager,
+Recruiter,
+Talent Acquisition Specialist,
+Payroll Specialist,
+Employee Relations Manager,
+Learning & Development Coordinator,
+Compensation & Benefits Analyst,
+HR Consultant and
+Diversity & Inclusion Manager
+                </p>
+            </div>
+            <div class="accordion">
+              <div class="accordion-heading">
+                  <h3>3. Finance & Accounting</h3>
+                  <i class="fas fa-angle-down"></i>
+              </div>
+              <p class="accordion-content">
+                Financial Analyst,
+Accountant,
+Tax Specialist,
+Auditor,
+Chief Financial Officer (CFO),
+Payroll Coordinator,
+Credit Analyst,
+Bookkeeper,
+Financial Controller and
+Investment Analyst
+              </p>
+          </div>
+          <div class="accordion">
+            <div class="accordion-heading">
+                <h3>4. Marketing & Advertising</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accordion-content">
+              Digital Marketing Specialist,
+Marketing Manager,
+Social Media Manager,
+Content Marketing Strategist,
+SEO Specialist,
+Brand Manager,
+Advertising Account Executive,
+Copywriter,
+Public Relations Specialist and
+Market Research Analyst
+            </p>
+        </div>
+        <div class="accordion">
+          <div class="accordion-heading">
+              <h3>5. Sales & Business Development</h3>
+              <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">
+            Sales Manager,
+Business Development Executive,
+Account Manager,
+Sales Consultant,
+Territory Sales Manager,
+Sales Engineer,
+Inside Sales Representative,
+Key Account Manager,
+Sales Analyst and
+Regional Sales Director
+          </p>
+      </div>
+      <div class="accordion">
+        <div class="accordion-heading">
+            <h3>6. Healthcare & Medical</h3>
+            <i class="fas fa-angle-down"></i>
+        </div>
+        <p class="accordion-content">
+          Registered Nurse (RN),
+Physician,
+Medical Lab Technician,
+Pharmacist,
+Physical Therapist,
+Radiologic Technologist,
+Healthcare Administrator,
+Medical Billing Specialist,
+Occupational Therapist and
+Medical Assistant
+        </p>
+    </div>
+    <div class="accordion">
+      <div class="accordion-heading">
+          <h3>7. Engineering & Manufacturing</h3>
+          <i class="fas fa-angle-down"></i>
+      </div>
+      <p class="accordion-content">
+        Mechanical Engineer,
+Civil Engineer,
+Electrical Engineer,
+Manufacturing Engineer,
+Process Engineer,
+Quality Control Engineer,
+Production Manager,
+Industrial Engineer,
+Structural Engineer and
+Project Engineer
+      </p>
+  </div>
+
+              <div class="accordion">
+                  <div class="accordion-heading">
+                      <h3>8. Customer Service & Support</h3>
+                      <i class="fas fa-angle-down"></i>
+                  </div>
+                  <p class="accordion-content">
+                    Customer Service Representative,
+                    Call Center Manager,
+                    Technical Support Specialist,
+                    Help Desk Analyst,
+                    Client Services Manager,
+                    Customer Success Specialist,
+                    Complaint Resolution Specialist,
+                    Customer Support Analyst,
+                    Service Delivery Manager and
+                    Relationship Manager
+                  </p>
+              </div>
+
+              <div class="accordion">
+                  <div class="accordion-heading">
+                      <h3>9. Administration & Office Support</h3>
+                      <i class="fas fa-angle-down"></i>
+                  </div>
+                  <p class="accordion-content">
+                    Administrative Assistant,
+Office Manager,
+Executive Assistant,
+Receptionist,
+Data Entry Clerk,
+Operations Coordinator,
+Virtual Assistant,
+Office Coordinator,
+Facilities Manager and
+Administrative Coordinator
+                  </p>
+              </div>
+              <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>10. Education & Training</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                  Teacher,
+Education Consultant,
+School Administrator,
+Curriculum Developer,
+Academic Advisor,
+Special Education Teacher,
+Corporate Trainer,
+Instructional Designer,
+Online Course Developer and
+University Professor
+                </p>
+            </div>
+
+          </div>
+
+          <div class="accordion-container">
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>11. Legal & Compliance</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                  Lawyer,
+Paralegal,
+Legal Assistant,
+Compliance Officer,
+Corporate Counsel,
+Contract Manager,
+Legal Secretary,
+Regulatory Affairs Specialist,
+Risk Manager and
+Intellectual Property Specialist
+                </p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>12. Operations & Supply Chain</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                  Operations Manager,
+Supply Chain Manager,
+Logistics Coordinator,
+Procurement Specialist,
+Warehouse Manager,
+Operations Analyst,
+Inventory Control Specialist,
+Supply Chain Analyst,
+Distribution Manager and
+Demand Planner
+                </p>
+            </div>
+            <div class="accordion">
+              <div class="accordion-heading">
+                  <h3>13. Project Management</h3>
+                  <i class="fas fa-angle-down"></i>
+              </div>
+              <p class="accordion-content">
+                Project Manager,
+Program Manager,
+Project Coordinator,
+Project Analyst,
+Scrum Master,
+Agile Coach,
+Portfolio Manager,
+Construction Project Manager,
+IT Project Manager and
+Product Manager
+              </p>
+          </div>
+          <div class="accordion">
+            <div class="accordion-heading">
+                <h3>14. Creative & Design</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accordion-content">
+              Graphic Designer,
+UI/UX Designer,
+Art Director,
+Web Designer,
+Motion Graphics Designer,
+Creative Director,
+Interior Designer,
+Fashion Designer,
+Multimedia Specialist and
+Video Editor
+            </p>
+        </div>
+        <div class="accordion">
+          <div class="accordion-heading">
+              <h3>15. Consulting & Strategy</h3>
+              <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">
+            Management Consultant,
+Strategy Consultant,
+Business Analyst,
+Financial Consultant,
+IT Consultant,
+Human Resources Consultant,
+Marketing Consultant,
+Change Management Consultant,
+Operations Consultant and
+Sustainability Consultant
+          </p>
+      </div>
+      <div class="accordion">
+        <div class="accordion-heading">
+            <h3>16. Retail & E-commerce</h3>
+            <i class="fas fa-angle-down"></i>
+        </div>
+        <p class="accordion-content">
+          Store Manager,
+E-commerce Manager,
+Retail Sales Associate,
+Merchandise Planner,
+Visual Merchandiser,
+Supply Chain Specialist (Retail),
+Customer Experience Manager,
+Inventory Manager,
+Online Sales Manager and
+Loss Prevention Specialist
+        </p>
+    </div>
+    <div class="accordion">
+      <div class="accordion-heading">
+          <h3>17. Hospitality & Travel</h3>
+          <i class="fas fa-angle-down"></i>
+      </div>
+      <p class="accordion-content">
+        Hotel Manager,
+Travel Consultant,
+Event Coordinator,
+Front Desk Receptionist,
+Concierge,
+Catering Manager,
+Housekeeping Supervisor,
+Food & Beverage Manager,
+Tour Guide and
+Guest Services Manager
+      </p>
+  </div>
+  <div class="accordion">
+    <div class="accordion-heading">
+        <h3>18. Construction & Real Estate</h3>
+        <i class="fas fa-angle-down"></i>
+    </div>
+    <p class="accordion-content">
+      Construction Manager,
+Architect,
+Civil Engineer (Construction),
+Site Supervisor,
+Property Manager,
+Real Estate Agent,
+Quantity Surveyor,
+Building Inspector,
+Leasing Consultant and
+Facilities Coordinator
+    </p>
+</div>
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>19. Logistics & Transportation</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                  Logistics Manager,
+Transportation Planner,
+Fleet Manager,
+Supply Chain Coordinator,
+Delivery Driver,
+Freight Broker,
+Warehouse Supervisor,
+Import/Export Coordinator,
+Dispatch Coordinator and
+Logistics Analyst
+                </p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>20. Media & Communications</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                  Journalist,
+Public Relations Manager,
+Media Buyer,
+Content Creator,
+Communications Specialist,
+Social Media Coordinator,
+Broadcast Producer,
+Video Producer,
+Copy Editor and
+Media Planner
+                </p>
+            </div>
+
+        </div>
+          
+        
+
+      </div>
+
+  </section>
+
+
+    <!-- Company Section End-->
+
+    <!-- footer section start -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>find us here</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            deleniti.
+          </p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+          </div>
+        </div>
+
+        <div class="box" id="contact">
+          <h3>contact us</h3>
+          <a href="" class="links"> Support@talensync.com </a>
+          <a href="" class="links"> www.talentsync.com</a>
+          <a href="" class="links"> 8927132604</a>
+          <a href="" class="links"> E 39 PGF | Greater Noida | G B Nagar </a>
+          
+         
+          
+        </div>
+      
+    </section>
+
+    <!-- footer section end -->
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+       <!-- <h1>Login</h1> -->
+    
+       <!-- <label for="email"><b>Email</b></label>
+       <input type="text" placeholder="Enter Email" name="email" required>
+    
+       <label for="psw"><b>Password</b></label>
+       <input type="password" placeholder="Enter Password" name="psw" required>
+    
+       <button type="submit" class="btn">Login</button>
+       <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+       
+       <form>
+        
+         <h3>GET IN TOUCH</h3>
+         <input type="text" id="name" placeholder="Your Name" required>
+         <input type="email" id="email" placeholder="Email id" required>
+         <input type="text" id="phone" placeholder="Mobile Number" required>
+         <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+         <button type="submit">Send</button>
+         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+       </form>
+     
+     </form> 
+    
+     
+    
+    
+    </div>
+
+    <!-- swiper js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js file -->
+    <script src="script.js"></script>
+  </body>
+</html>
