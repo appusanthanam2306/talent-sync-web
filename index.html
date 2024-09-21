@@ -18,6 +18,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- swiper js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js file -->
+    <script src="script.js" defer></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      emailjs.init('sZurRextZvhbsHxiP')
+    </script>
+
     <!-- header section starts -->
 
     <header>
@@ -116,6 +127,7 @@
           <p>
             Streamline your business operations with our reliable IT outsourcing services, designed to meet your technology needs and drive growth.
           </p>
+          <div class="btns" onclick="openForm()"> Register</div>
         </div>
 
         <div class="box">
@@ -124,6 +136,7 @@
           <p>
             Let us handle your HR functions, from recruitment to employee management, so you can focus on scaling your business while we manage the workforce.
           </p>
+          <div class="btns" onclick="openForm()"> Register</div>
         </div>
       </div>
     </section>
@@ -679,8 +692,11 @@ Media Planner
     </section>
 
     <!-- footer section end -->
+
+    <!-- Backdrop -->
+    <div id="backdrop" class="backdrop"></div>
     <div class="form-popup" id="myForm">
-      <form action="/action_page.php" class="form-container">
+      <!-- <form class="form-container"> -->
        <!-- <h1>Login</h1> -->
     
        <!-- <label for="email"><b>Email</b></label>
@@ -692,27 +708,36 @@ Media Planner
        <button type="submit" class="btn">Login</button>
        <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
        
-       <form>
-        
-         <h3>GET IN TOUCH</h3>
-         <input type="text" id="name" placeholder="Your Name" required>
-         <input type="email" id="email" placeholder="Email id" required>
-         <input type="text" id="phone" placeholder="Mobile Number" required>
-         <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
-         <button type="submit">Send</button>
-         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-       </form>
+        <form class="form-container">
+            <div class="feedback-header">
+              <h3>GET IN TOUCH</h3>
+              <icon onclick="closeForm()" class="iconStyles">
+                <i class="fas fa-xmark fa-2x"></i>
+              </icon>
+            </div>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email id" required>
+            <input type="text" id="phone" placeholder="Mobile Number" >
+            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+            <div class="btn-group">
+              <button type="submit" id="emailButton" class="btns send" onclick="sendEmail(event)" disabled>Send</button>
+              <button type="button" class="btns cancel" onclick="closeForm()">Close</button>
+            </div>
+        </form>
      
-     </form> 
-    
-     
-    
-    
+     <!-- </form>  -->
+  
     </div>
 
     <!-- swiper js cdn link -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <!-- custom js file -->
-    <script src="script.js"></script>
+<!--     <script src="script.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      emailjs.init('sZurRextZvhbsHxiP')
+    </script> -->
   </body>
 </html>
