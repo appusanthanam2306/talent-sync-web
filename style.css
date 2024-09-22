@@ -129,7 +129,6 @@ section {
   }
 }
 
-
 /* Blinking cursor */
 @keyframes blink {
   0%,
@@ -261,7 +260,7 @@ button:not(:disabled):hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 7%;
+  padding: 2rem 20%;
   background: #fff;
   position: relative;
 }
@@ -321,7 +320,9 @@ button:not(:disabled):hover {
 }
 
 .home .content h3 {
-  font-size: 6rem;
+  font-size: 6.333em;
+  font-weight: 800;
+  line-height: 1.166em;
   /* color: #248277; */
   color: #ffffff;
   padding: 1rem 0;
@@ -332,7 +333,7 @@ button:not(:disabled):hover {
   line-height: 2;
   /* color: #777; */
   color: #ffffff;
-  padding: 1rem 0%;
+  padding: 1rem 10rem;
 }
 
 /* end */
@@ -419,6 +420,10 @@ button:not(:disabled):hover {
 /* end */
 
 /* services */
+
+.services {
+  background: #f6f6f6;
+}
 
 .services .box-container {
   display: grid;
