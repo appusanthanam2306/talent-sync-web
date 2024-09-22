@@ -32,6 +32,33 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5rem;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.branding {
+  display: flex;
+  flex: auto;
+  align-items: center;
+}
+
+.site-title > a {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #248277;
+}
+
+.site-description {
+  opacity: 0.7;
+  font-size: 1.25rem;
+}
+
+.text-logo {
+  padding-left: 20px;
+}
+
 section {
   padding: 2rem 7%;
 }
@@ -48,15 +75,71 @@ section {
 .heading span {
   color: #248277;
   text-transform: uppercase;
+  display: inline-block;
 }
 
-/* button:disabled,
-button[disabled] {
-  border: 0.1rem solid #248277;
-  background-color: #cccccc;
-  color: #666666;
-  cursor: none;
-} */
+/* Typewriting-animation */
+.content h3 span {
+  position: relative;
+  margin: 1rem;
+  display: inline-block;
+}
+
+.content h3 span::before {
+  content: "Talent Sync";
+  color: #248277;
+  opacity: 0; /* Hide the text initially */
+  animation: typing 5s steps(11) forwards;
+}
+
+.content h3 span::after {
+  /*   content: "";
+  position: absolute;
+  width: (100% + 0.75rem);
+  height: 100%;
+  background: transparent;
+  right: -8px;
+  animation: cursor ease-in-out 0.5s infinite, typing 30s steps(24) infinite; */
+
+  /* border-left: 1rem solid #248277; */
+  content: "";
+  position: absolute;
+  /* width: 0.1rem;  */
+  height: 100%;
+  background-color: #248277; /* Cursor color */
+  right: 0;
+  animation: blink 1s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+  0% {
+    opacity: 0.125;
+    width: 0; /* Start with no width */
+  }
+
+  50% {
+    opacity: 0.5;
+    width: 50%;
+  }
+
+  100% {
+    opacity: 1;
+    width: 100%; /* Expand to full text width */
+  }
+}
+
+
+/* Blinking cursor */
+@keyframes blink {
+  0%,
+  100% {
+    background-color: transparent; /* Hide cursor at start/end */
+  }
+  50% {
+    background-color: #248277; /* Cursor visible at 50% of the blink cycle */
+  }
+}
 
 .btns {
   display: inline-block;
@@ -206,31 +289,49 @@ button:not(:disabled):hover {
 
 /* home */
 
+.overlay {
+  border-image: linear-gradient(hsl(240 100% 20% / 0.6), hsl(0 100% 20% / 0.6))
+    fill 1;
+}
+
 .home {
   padding-top: 10rem;
+  width: 100%;
+  height: calc(100vh - 76px);
   min-height: 60vh;
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
-  /* background: url(images/home.png) no-repeat; */
-  /* background-size: cover !important; */
-  /* background-position: center !important; */
+  justify-content: center;
+  /* color: #248277; */
+  background: url(images/landing_page_img.jpg) no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 .home .content {
+  /* flex: 1; */
   /* max-width: 100rem; */
+  /*   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
 }
 
 .home .content h3 {
   font-size: 6rem;
-  color: #248277;
+  /* color: #248277; */
+  color: #ffffff;
   padding: 1rem 0;
 }
 
 .home .content p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 2;
-  color: #777;
+  /* color: #777; */
+  color: #ffffff;
   padding: 1rem 0%;
 }
 
@@ -628,7 +729,7 @@ button:not(:disabled):hover {
   padding: 1.5rem 2rem;
   border: 0.1rem solid #248277;
   font-size: 1.5rem;
-  background: #fff;
+  background: transparent;
   border-top: 0;
   line-height: 2;
   animation: animate 0.2s linear backwards;
