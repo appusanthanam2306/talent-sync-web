@@ -29,9 +29,9 @@ requestorEmail.addEventListener("input", checkFields);
 requestorPhone.addEventListener("input", checkFields);
 requestorMessage.addEventListener("input", checkFields);
 
-document.querySelector("#menu").onclick = () => {
+/* document.querySelector("#menu").onclick = () => {
   navbar.classList.toggle("active");
-};
+}; */
 
 window.onscroll = () => {
   navbar.classList.remove("active");
@@ -45,12 +45,26 @@ window.onscroll = () => {
 
 let accordions = document.querySelectorAll(".accordion-container .accordion");
 
-accordions.forEach((acco) => {
+/* accordions.forEach((acco) => {
   acco.onclick = () => {
     accordions.forEach((subAcco) => {
       subAcco.classList.remove("active");
     });
     acco.classList.add("active");
+  };
+}); */
+
+accordions.forEach((acco) => {
+  acco.onclick = () => {
+    // Toggle the clicked accordion's active class
+    acco.classList.toggle("active");
+
+    // Close all others
+    accordions.forEach((subAcco) => {
+      if (subAcco !== acco) {
+        subAcco.classList.remove("active");
+      }
+    });
   };
 });
 
