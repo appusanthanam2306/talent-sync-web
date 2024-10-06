@@ -3,716 +3,740 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Complete Responsive Furniture Webite Using HTML CSS & JS</title>
-    <!-- fontawesome cdn link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <!-- swiper js cdn lnk -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <!-- custom css file -->
-    <link rel="stylesheet" href="style.css" />
+    <title>TalentSync</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- header section starts -->
-
-    <header>
-      <div class="header-top">
-        <div class="fas fa-bars" id="menu"></div>
-
-        <a href="#" class="logo"><i class="fas fa-couch"></i> TS</a>
-        <div class="social">
-          <a href="#" class="fab fa-facebook"></a>
-          <a href="#" class="fab fa-twitter"></a>
-          <a href="#" class="fab fa-pinterest"></a>
-          <a href="#" class="fab fa-linkedin"></a>
+    <!-- LANDING PAGE SECTION - START -->
+    <div class="landing-page-section">
+      <nav>
+        <div id="logo" class="logo-section">
+          <img src="./images/TalentSync_logo.png" alt="" />
+          <div class="company-name">TalentSync</div>
         </div>
+        <!-- <div id="hamburger" onclick="toggleMenu()">☰</div> -->
+        <div id="nav-links" class="links-section">
+          <!-- <a href="#" class="close" onclick="toggleMenu()">×</a> -->
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
         </div>
-      </div>
+        <div class="btn btn-md">Sign In</div>
+      </nav>
 
-      <div class="header-main">
-        <nav class="navbar">
-          <a href="#home">home</a>
-          <a href="#about">about</a>
-          <a href="#services">services</a>
-          <a href="#contact">contact</a>
-          
-        </nav>
-      </div>
-    </header>
-
-    <!-- header section ends -->
-
-    <!-- home section starts -->
-
-    <section class="home" id="home">
-      <div class="content">
-        <h3 >Welcome to Talent Sync</h3>
-        <p>
-             – your ultimate platform for connecting job seekers with top employers and offering expert IT and HR outsourcing solutions.
-            Let us help you find the perfect match for your career or business needs!
-        </p>
-      </div>
-    </section>
-
-    <!-- home section ends -->
-
-    <!-- about section starts -->
-
-    <section class="about" id="about">
-      <h1 class="heading">about <span>us</span></h1>
-
-      <div class="row">
-       
-
+      <div class="landing-page-content">
         <div class="content">
-          <!-- <h3>Crafting Furniture</h3> -->
+          <h1>
+            Welcome to
+            <div class="accent">Talent Sync</div>
+          </h1>
           <p>
-            Welcome to Talent Sync – your trusted partner in career connections and workforce solutions. Whether you're a job seeker looking to elevate your career or a company in search of top-tier talent, Talent Sync is here to bridge the gap. Our platform allows job seekers to upload their CVs effortlessly, making it easier for employers to find the right fit for their teams.
-          </p> 
-          <p>
-            At Talent Sync, we don't just stop at job postings – we go beyond with specialized IT and HR outsourcing services. Our expert outsourcing solutions help businesses streamline their operations by handling their IT and HR functions, allowing them to focus on growth and innovation.
+            Your Ultimate Platform For Connecting Job Seekers With Top Employers
+            And Offering Expert IT And HR Outsourcing Solutions. Let Us Help You
+            Find The Perfect Match For Your Career Or Business Needs!
           </p>
-          <p>
-             For companies, Talent Sync is your go-to portal to share hiring requests and access a pool of qualified candidates. With our industry expertise and intuitive platform, we make the hiring process seamless, fast, and efficient.
-          </p>
-          <p>
-            For job seekers, we’re more than just a job board. We’re your gateway to a brighter future, connecting you with opportunities that match your skills and aspirations.
-          </p>
-          <p>
-            Explore the possibilities with Talent Sync today, and let us sync talent with opportunity!
-         </p>
-          
-          <a href="#" class="btns">read more</a>
-        </div>
-      </div>
-    </section>
 
-    <!-- about section ends -->
-
-    <!-- services section starts -->
-
-    <section class="services" id="services">
-      <h1 class="heading">our <span>services</span></h1>
-
-      <div class="box-container">
-        <div class="box">
-          <data class="card-number" value="01">01</data>
-          <h3>Job Portal</h3>
-          <p>
-            Upload your CV and connect with leading employers, or find top talent to fill your open positions quickly and efficiently.
-          </p>
-          <div class="btns" onclick="openForm()"> Register</div>
-          
-        </div>
-
-        <div class="box">
-          <data class="card-number" value="02">02</data>
-          <h3>IT Outsourcing</h3>
-          <p>
-            Streamline your business operations with our reliable IT outsourcing services, designed to meet your technology needs and drive growth.
-          </p>
-        </div>
-
-        <div class="box">
-          <data class="card-number" value="03">03</data>
-          <h3>HR Outsourcing</h3>
-          <p>
-            Let us handle your HR functions, from recruitment to employee management, so you can focus on scaling your business while we manage the workforce.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- services section ends -->
-
-    <!-- Company Section Start-->
-
-    <section class="review" id="review">
-      <h1 class="heading">our <span>services</span></h1>
-      <div class="row">
-        
-          <!-- <div class="swiper review-slider">
-
-              <div class="swiper-wrapper">
-
-                  <div class="swiper-slide slide">
-                      <h2 class="heading">client's review</h2>
-                      <i class="fas fa-quote-right"></i>
-                      <div class="user">
-                          <img src="images/pic-1.png" alt="">
-                          <div class="user-info">
-                              <h3>john lax</h3>
-                              <div class="stars">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star-half-alt"></i>
-                              </div>
-                          </div>
-                      </div>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet beatae voluptatem vel hic mollitia magnam facilis quisquam quasi nemo in odit consectetur maxime.</p>
-                  </div>
-
-                  <div class="swiper-slide slide">
-                      <h2 class="heading">client's review</h2>
-                      <i class="fas fa-quote-right"></i>
-                      <div class="user">
-                          <img src="images/pic-2.png" alt="">
-                          <div class="user-info">
-                              <h3>john lax</h3>
-                              <div class="stars">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star-half-alt"></i>
-                              </div>
-                          </div>
-                      </div>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet beatae voluptatem vel hic mollitia magnam facilis quisquam quasi nemo in odit consectetur maxime.</p>
-                  </div>
-
-                  <div class="swiper-slide slide">
-                      <h2 class="heading">client's review</h2>
-                      <i class="fas fa-quote-right"></i>
-                      <div class="user">
-                          <img src="images/pic-3.png" alt="">
-                          <div class="user-info">
-                              <h3>john lax</h3>
-                              <div class="stars">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star-half-alt"></i>
-                              </div>
-                          </div>
-                      </div>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet beatae voluptatem vel hic mollitia magnam facilis quisquam quasi nemo in odit consectetur maxime.</p>
-                  </div>
-
-                  <div class="swiper-slide slide">
-                      <h2 class="heading">client's review</h2>
-                      <i class="fas fa-quote-right"></i>
-                      <div class="user">
-                          <img src="images/pic-4.png" alt="">
-                          <div class="user-info">
-                              <h3>john lax</h3>
-                              <div class="stars">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star-half-alt"></i>
-                              </div>
-                          </div>
-                      </div>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet beatae voluptatem vel hic mollitia magnam facilis quisquam quasi nemo in odit consectetur maxime.</p>
-                  </div>
-
-                  <div class="swiper-slide slide">
-                      <h2 class="heading">client's review</h2>
-                      <i class="fas fa-quote-right"></i>
-                      <div class="user">
-                          <img src="images/pic-5.png" alt="">
-                          <div class="user-info">
-                              <h3>john lax</h3>
-                              <div class="stars">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star-half-alt"></i>
-                              </div>
-                          </div>
-                      </div>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet beatae voluptatem vel hic mollitia magnam facilis quisquam quasi nemo in odit consectetur maxime.</p>
-                  </div>
-
-                  <div class="swiper-slide slide">
-                      <h2 class="heading">client's review</h2>
-                      <i class="fas fa-quote-right"></i>
-                      <div class="user">
-                          <img src="images/pic-6.png" alt="">
-                          <div class="user-info">
-                              <h3>john lax</h3>
-                              <div class="stars">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star-half-alt"></i>
-                              </div>
-                          </div>
-                      </div>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet beatae voluptatem vel hic mollitia magnam facilis quisquam quasi nemo in odit consectetur maxime.</p>
-                  </div>
-
-              </div>
-
-              <div class="swiper-pagination"></div>
-
-          </div> -->
-
-          x
-          <div class="accordion-container">
-
-              <div class="accordion active">
-                  <div class="accordion-heading">
-                      <h3>1. Information Technology (IT)</h3>
-                      <i class="fas fa-angle-down"></i>
-                  </div>
-                  <p class="accordion-content">
-                    Software Developer,
-System Administrator,
-IT Support Specialist,
-Network Engineer,
-Data Scientist,
-Cybersecurity Analyst,
-DevOps Engineer,
-Cloud Architect,
-IT Project Manager and
-Database Administrator
-                  </p>
-              </div>
-
-              
-              <div class="accordion">
-                <div class="accordion-heading">
-                    <h3>2. Human Resources (HR)</h3>
-                    <i class="fas fa-angle-down"></i>
-                </div>
-                <p class="accordion-content">
-                  HR Generalist,
-HR Manager,
-Recruiter,
-Talent Acquisition Specialist,
-Payroll Specialist,
-Employee Relations Manager,
-Learning & Development Coordinator,
-Compensation & Benefits Analyst,
-HR Consultant and
-Diversity & Inclusion Manager
-                </p>
+          <div class="subscribe-section">
+            <div class="subscribe-input-section">
+              <input type="text" placeholder="Email Address" />
+              <div class="btn btn-lg btn-shadow">Join</div>
             </div>
-            <div class="accordion">
-              <div class="accordion-heading">
-                  <h3>3. Finance & Accounting</h3>
-                  <i class="fas fa-angle-down"></i>
-              </div>
-              <p class="accordion-content">
-                Financial Analyst,
-Accountant,
-Tax Specialist,
-Auditor,
-Chief Financial Officer (CFO),
-Payroll Coordinator,
-Credit Analyst,
-Bookkeeper,
-Financial Controller and
-Investment Analyst
-              </p>
-          </div>
-          <div class="accordion">
-            <div class="accordion-heading">
-                <h3>4. Marketing & Advertising</h3>
-                <i class="fas fa-angle-down"></i>
+            <div class="subtitle">
+              <div class="groove"></div>
+              <div>Subscribe to our newsletter</div>
             </div>
-            <p class="accordion-content">
-              Digital Marketing Specialist,
-Marketing Manager,
-Social Media Manager,
-Content Marketing Strategist,
-SEO Specialist,
-Brand Manager,
-Advertising Account Executive,
-Copywriter,
-Public Relations Specialist and
-Market Research Analyst
-            </p>
-        </div>
-        <div class="accordion">
-          <div class="accordion-heading">
-              <h3>5. Sales & Business Development</h3>
-              <i class="fas fa-angle-down"></i>
           </div>
-          <p class="accordion-content">
-            Sales Manager,
-Business Development Executive,
-Account Manager,
-Sales Consultant,
-Territory Sales Manager,
-Sales Engineer,
-Inside Sales Representative,
-Key Account Manager,
-Sales Analyst and
-Regional Sales Director
-          </p>
-      </div>
-      <div class="accordion">
-        <div class="accordion-heading">
-            <h3>6. Healthcare & Medical</h3>
-            <i class="fas fa-angle-down"></i>
         </div>
-        <p class="accordion-content">
-          Registered Nurse (RN),
-Physician,
-Medical Lab Technician,
-Pharmacist,
-Physical Therapist,
-Radiologic Technologist,
-Healthcare Administrator,
-Medical Billing Specialist,
-Occupational Therapist and
-Medical Assistant
-        </p>
+
+        <img class="bg-pattern" src="./images/bg_pattern.png" alt="" />
+
+        <div class="image">
+          <img src="./images/landing_page.png" alt="" />
+        </div>
+      </div>
     </div>
-    <div class="accordion">
-      <div class="accordion-heading">
-          <h3>7. Engineering & Manufacturing</h3>
-          <i class="fas fa-angle-down"></i>
-      </div>
-      <p class="accordion-content">
-        Mechanical Engineer,
-Civil Engineer,
-Electrical Engineer,
-Manufacturing Engineer,
-Process Engineer,
-Quality Control Engineer,
-Production Manager,
-Industrial Engineer,
-Structural Engineer and
-Project Engineer
+    <!-- LANDING PAGE SECTION - END -->
+
+    <!-- SERVICES SECTION - START -->
+    <div class="services-section">
+      <h2>
+        What we
+        <span class="accent">Do?</span>
+      </h2>
+      <p>
+        Our full suite of services is designed to meet your recruitment needs
       </p>
-  </div>
-
-              <div class="accordion">
-                  <div class="accordion-heading">
-                      <h3>8. Customer Service & Support</h3>
-                      <i class="fas fa-angle-down"></i>
-                  </div>
-                  <p class="accordion-content">
-                    Customer Service Representative,
-                    Call Center Manager,
-                    Technical Support Specialist,
-                    Help Desk Analyst,
-                    Client Services Manager,
-                    Customer Success Specialist,
-                    Complaint Resolution Specialist,
-                    Customer Support Analyst,
-                    Service Delivery Manager and
-                    Relationship Manager
-                  </p>
-              </div>
-
-              <div class="accordion">
-                  <div class="accordion-heading">
-                      <h3>9. Administration & Office Support</h3>
-                      <i class="fas fa-angle-down"></i>
-                  </div>
-                  <p class="accordion-content">
-                    Administrative Assistant,
-Office Manager,
-Executive Assistant,
-Receptionist,
-Data Entry Clerk,
-Operations Coordinator,
-Virtual Assistant,
-Office Coordinator,
-Facilities Manager and
-Administrative Coordinator
-                  </p>
-              </div>
-              <div class="accordion">
-                <div class="accordion-heading">
-                    <h3>10. Education & Training</h3>
-                    <i class="fas fa-angle-down"></i>
-                </div>
-                <p class="accordion-content">
-                  Teacher,
-Education Consultant,
-School Administrator,
-Curriculum Developer,
-Academic Advisor,
-Special Education Teacher,
-Corporate Trainer,
-Instructional Designer,
-Online Course Developer and
-University Professor
-                </p>
-            </div>
-
+      <div class="services-container">
+        <div class="service-container">
+          <!-- <img src="./images/job_portal.svg" alt="" /> -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 256.01 256"
+            data-inject-url="https://talentsyncsolutions.in/assets/img/icons/solid/globe-2.svg"
+            class="svg-inject icon-svg icon-svg-md solid-mono text-grape mb-5"
+          >
+            <path
+              class="fill-secondary"
+              d="M128.11 256h-.24a126.37 126.37 0 01-22-1.84 8 8 0 112.72-15.76A114.68 114.68 0 00128 240a8.06 8.06 0 018.07 8 8 8 0 01-7.94 8zm33.52-12.5a8 8 0 014.77-10.25 112.18 112.18 0 0017.66-8.25 8 8 0 018 13.85 128.36 128.36 0 01-20.19 9.46 8 8 0 01-10.26-4.79zm-97.5-4.56a128.83 128.83 0 01-18.27-12.78 8 8 0 1110.25-12.27 114.33 114.33 0 0016 11.2 8 8 0 11-8 13.85zm150.69-27.71a8 8 0 01-1-11.26A112.91 112.91 0 00225 184a8 8 0 0113.86 8 130.3 130.3 0 01-12.78 18.26 8 8 0 01-11.28 1zm-197.59-19A128.41 128.41 0 017.76 172a8 8 0 1115-5.49 112.8 112.8 0 008.29 17.67 8 8 0 11-13.84 8zM244.8 156.7a8 8 0 01-6.5-9.26A112.3 112.3 0 00240 128a8.23 8.23 0 018-8.26 7.81 7.81 0 018 8.76 124.89 124.89 0 01-1.92 21.72 8 8 0 01-9.26 6.48zM8 136.13a7.89 7.89 0 01-8-7.87s.61-15 1.86-22.18a8 8 0 1115.76 2.7A114.47 114.47 0 0016 128a8.09 8.09 0 01-8 8.13zm225.1-46.88a110.41 110.41 0 00-8.32-17.63 8 8 0 0113.83-8.08 129 129 0 019.52 20.17 8 8 0 01-15 5.54zM19.9 75.18A8 8 0 0117 64.26 126.41 126.41 0 0129.73 46 8 8 0 1142 56.21a112.72 112.72 0 00-11.17 16 8 8 0 01-10.93 3zm179.76-33.24a113.17 113.17 0 00-16-11.16 8 8 0 117.95-13.87 127.39 127.39 0 0118.3 12.75 8 8 0 01-10.24 12.28zM60.78 28.26a8 8 0 012.88-11 128 128 0 0120.18-9.44 8 8 0 115.52 15 112.17 112.17 0 00-17.63 8.31 8 8 0 01-11-2.88zm86.29-10.64A112.4 112.4 0 00128 16a8.17 8.17 0 01-8.19-8 7.84 7.84 0 017.81-8h.38a127.72 127.72 0 0121.8 1.86 8 8 0 01-2.71 15.76z"
+            ></path>
+            <path
+              class="fill-primary"
+              d="M128 32a96 96 0 1096 96 96.11 96.11 0 00-96-96zm62.61 145.66a103 103 0 00-14.49-7.76 160.22 160.22 0 005-33.9h26.48a79.47 79.47 0 01-17.01 41.66zM48.4 136h26.48a161.6 161.6 0 005 33.9 104.11 104.11 0 00-14.5 7.76A79.47 79.47 0 0148.4 136zm17-57.66a103.14 103.14 0 0014.5 7.76 160.2 160.2 0 00-5 33.9H48.4a79.47 79.47 0 0117-41.66zM120 79.7a106.49 106.49 0 01-20-3.43c5.41-13 12.6-22.11 20-26zm0 16V120H90.86A145.12 145.12 0 0195 91.49a122.72 122.72 0 0025 4.21zm0 40.3v24.3a121.26 121.26 0 00-25 4.23A144.37 144.37 0 0190.86 136H120zm0 40.3v29.48c-7.4-3.94-14.59-13-20-26a104.12 104.12 0 0120-3.44zm16 0a106.21 106.21 0 0120 3.43c-5.4 13-12.59 22.11-20 26zm0-16V136h29.1a144.37 144.37 0 01-4.16 28.51 122.49 122.49 0 00-25-4.21zm0-40.3V95.7a121.14 121.14 0 0025-4.23 142.91 142.91 0 014.1 28.53H136zm0-40.3V50.24c7.41 3.94 14.6 13 20 26a104.36 104.36 0 01-20 3.46zm27.94-23.08a80.19 80.19 0 0115.25 10 88.15 88.15 0 01-8.19 4.21 98.1 98.1 0 00-7.12-14.21zm-79 14.21a86.72 86.72 0 01-8.12-4.25 80.12 80.12 0 0115.24-10 95.14 95.14 0 00-7.12 14.25zm0 114.34a98.11 98.11 0 007.12 14.21 80.12 80.12 0 01-15.24-10 86.72 86.72 0 018.12-4.21zm86.1 0a88.15 88.15 0 018.13 4.25 80.19 80.19 0 01-15.25 10 99.14 99.14 0 007.08-14.25zM181.1 120a161 161 0 00-5-33.9 104.57 104.57 0 0014.49-7.76 79.47 79.47 0 0117 41.66z"
+            ></path>
+          </svg>
+          <div class="title">Job Portal</div>
+          <div class="content">
+            Upload Your CV And Connect With Leading Employers, Or Find Top
+            Talent To Fill Your Open Positions Quickly And Efficiently.
           </div>
-
-          <div class="accordion-container">
-
-            <div class="accordion">
-                <div class="accordion-heading">
-                    <h3>11. Legal & Compliance</h3>
-                    <i class="fas fa-angle-down"></i>
-                </div>
-                <p class="accordion-content">
-                  Lawyer,
-Paralegal,
-Legal Assistant,
-Compliance Officer,
-Corporate Counsel,
-Contract Manager,
-Legal Secretary,
-Regulatory Affairs Specialist,
-Risk Manager and
-Intellectual Property Specialist
-                </p>
-            </div>
-
-            <div class="accordion">
-                <div class="accordion-heading">
-                    <h3>12. Operations & Supply Chain</h3>
-                    <i class="fas fa-angle-down"></i>
-                </div>
-                <p class="accordion-content">
-                  Operations Manager,
-Supply Chain Manager,
-Logistics Coordinator,
-Procurement Specialist,
-Warehouse Manager,
-Operations Analyst,
-Inventory Control Specialist,
-Supply Chain Analyst,
-Distribution Manager and
-Demand Planner
-                </p>
-            </div>
-            <div class="accordion">
-              <div class="accordion-heading">
-                  <h3>13. Project Management</h3>
-                  <i class="fas fa-angle-down"></i>
-              </div>
-              <p class="accordion-content">
-                Project Manager,
-Program Manager,
-Project Coordinator,
-Project Analyst,
-Scrum Master,
-Agile Coach,
-Portfolio Manager,
-Construction Project Manager,
-IT Project Manager and
-Product Manager
-              </p>
-          </div>
-          <div class="accordion">
-            <div class="accordion-heading">
-                <h3>14. Creative & Design</h3>
-                <i class="fas fa-angle-down"></i>
-            </div>
-            <p class="accordion-content">
-              Graphic Designer,
-UI/UX Designer,
-Art Director,
-Web Designer,
-Motion Graphics Designer,
-Creative Director,
-Interior Designer,
-Fashion Designer,
-Multimedia Specialist and
-Video Editor
-            </p>
+          <div class="btn">More Details</div>
         </div>
-        <div class="accordion">
-          <div class="accordion-heading">
-              <h3>15. Consulting & Strategy</h3>
-              <i class="fas fa-angle-down"></i>
+        <div class="service-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 255.98 213.34"
+            data-inject-url="https://talentsyncsolutions.in/assets/img/icons/solid/code.svg"
+            class="svg-inject icon-svg icon-svg-md solid-mono text-grape mb-5"
+          >
+            <path
+              class="fill-secondary"
+              d="M104 213.34a11 11 0 01-2.59-.32 10.64 10.64 0 01-7.76-12.93l48-192a10.66 10.66 0 0120.68 5.17l-48 192a10.66 10.66 0 01-10.33 8.08z"
+            ></path>
+            <path
+              class="fill-primary"
+              d="M74.66 181.34a10.57 10.57 0 01-7.54-3.12l-64-64a10.67 10.67 0 010-15.08l64-64a10.67 10.67 0 0115.09 15.08l-56.46 56.47 56.46 56.46a10.65 10.65 0 01-7.55 18.19zm106.65 0a10.55 10.55 0 01-7.53-3.12 10.67 10.67 0 010-15.08l56.46-56.47-56.46-56.46a10.67 10.67 0 1115.08-15.09l64 64a10.68 10.68 0 010 15.09l-64 64a10.58 10.58 0 01-7.55 3.13z"
+            ></path>
+          </svg>
+          <div class="title">IT Outsourcing</div>
+          <div class="content">
+            Streamline Your Business Operations With Our Reliable IT Outsourcing
+            Services, Designed To Meet Your Technology Needs And Drive Growth.
           </div>
-          <p class="accordion-content">
-            Management Consultant,
-Strategy Consultant,
-Business Analyst,
-Financial Consultant,
-IT Consultant,
-Human Resources Consultant,
-Marketing Consultant,
-Change Management Consultant,
-Operations Consultant and
-Sustainability Consultant
-          </p>
+          <div class="btn">More Details</div>
+        </div>
+        <div class="service-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 255.98 256"
+            data-inject-url="https://talentsyncsolutions.in/assets/img/icons/solid/team.svg"
+            class="svg-inject icon-svg icon-svg-md solid-mono text-grape mb-5"
+          >
+            <circle class="fill-primary" cx="128" cy="26.67" r="26.67"></circle>
+            <circle
+              class="fill-primary"
+              cx="202.67"
+              cy="176"
+              r="26.67"
+            ></circle>
+            <circle class="fill-primary" cx="53.33" cy="176" r="26.67"></circle>
+            <path
+              class="fill-primary"
+              d="M173.33 106.67H82.66a8 8 0 01-8-8v-5.33A29.35 29.35 0 01104 64h48a29.35 29.35 0 0129.33 29.32v5.33a8 8 0 01-8 8.02zM248 256h-90.67a8 8 0 01-8-8v-5.33a29.36 29.36 0 0129.33-29.33h48A29.36 29.36 0 01256 242.67V248a8 8 0 01-8 8zm-149.33 0H8a8 8 0 01-8-8v-5.33a29.36 29.36 0 0129.33-29.33h48a29.37 29.37 0 0129.33 29.33V248a8 8 0 01-8 8z"
+            ></path>
+            <path
+              class="fill-secondary"
+              d="M29.33 136.13a8 8 0 01-8-8 107.1 107.1 0 0161.73-96.77 8 8 0 116.73 14.51 91 91 0 00-52.48 82.26 8 8 0 01-7.98 8zm197.34 0a8 8 0 01-8-8 91 91 0 00-52.48-82.26 8 8 0 116.74-14.51 107.09 107.09 0 0161.73 96.77 8 8 0 01-8 8zM128 234.8a105.08 105.08 0 01-11.15-.58 8 8 0 011.66-15.9 93.73 93.73 0 0019.6-.06 8 8 0 011.76 15.9 110.68 110.68 0 01-11.87.64z"
+            ></path>
+          </svg>
+          <div class="title">HR Outsourcing</div>
+          <div class="content">
+            Let Us Handle Your HR Functions, From Recruitment To Employee
+            Management, So You Can Focus On Scaling Your Business While We
+            Manage The Workforce.
+          </div>
+          <div class="btn">More Details</div>
+        </div>
       </div>
-      <div class="accordion">
-        <div class="accordion-heading">
-            <h3>16. Retail & E-commerce</h3>
-            <i class="fas fa-angle-down"></i>
-        </div>
-        <p class="accordion-content">
-          Store Manager,
-E-commerce Manager,
-Retail Sales Associate,
-Merchandise Planner,
-Visual Merchandiser,
-Supply Chain Specialist (Retail),
-Customer Experience Manager,
-Inventory Manager,
-Online Sales Manager and
-Loss Prevention Specialist
-        </p>
     </div>
-    <div class="accordion">
-      <div class="accordion-heading">
-          <h3>17. Hospitality & Travel</h3>
-          <i class="fas fa-angle-down"></i>
-      </div>
-      <p class="accordion-content">
-        Hotel Manager,
-Travel Consultant,
-Event Coordinator,
-Front Desk Receptionist,
-Concierge,
-Catering Manager,
-Housekeeping Supervisor,
-Food & Beverage Manager,
-Tour Guide and
-Guest Services Manager
-      </p>
-  </div>
-  <div class="accordion">
-    <div class="accordion-heading">
-        <h3>18. Construction & Real Estate</h3>
-        <i class="fas fa-angle-down"></i>
-    </div>
-    <p class="accordion-content">
-      Construction Manager,
-Architect,
-Civil Engineer (Construction),
-Site Supervisor,
-Property Manager,
-Real Estate Agent,
-Quantity Surveyor,
-Building Inspector,
-Leasing Consultant and
-Facilities Coordinator
-    </p>
-</div>
+    <!-- SERVICES SECTION - END -->
 
-            <div class="accordion">
-                <div class="accordion-heading">
-                    <h3>19. Logistics & Transportation</h3>
-                    <i class="fas fa-angle-down"></i>
-                </div>
-                <p class="accordion-content">
-                  Logistics Manager,
-Transportation Planner,
-Fleet Manager,
-Supply Chain Coordinator,
-Delivery Driver,
-Freight Broker,
-Warehouse Supervisor,
-Import/Export Coordinator,
-Dispatch Coordinator and
-Logistics Analyst
-                </p>
-            </div>
-
-            <div class="accordion">
-                <div class="accordion-heading">
-                    <h3>20. Media & Communications</h3>
-                    <i class="fas fa-angle-down"></i>
-                </div>
-                <p class="accordion-content">
-                  Journalist,
-Public Relations Manager,
-Media Buyer,
-Content Creator,
-Communications Specialist,
-Social Media Coordinator,
-Broadcast Producer,
-Video Producer,
-Copy Editor and
-Media Planner
-                </p>
-            </div>
-
+    <!-- EXPLORE US SECTION - START -->
+    <div class="services-section">
+      <h2>
+        Why choose
+        <span class="accent">Us?</span>
+      </h2>
+      <p>Explore why our valued clients prefer our recruitment solutions.</p>
+      <div class="explore-us-outer-container">
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Information Technology (IT)</div>
+          </div>
+          <div class="content">
+            Software Developer, System Administrator, IT Support Specialist,
+            Network Engineer, Data Scientist, Cybersecurity Analyst, DevOps
+            Engineer, Cloud Architect, IT Project Manager And Database
+            Administrator
+          </div>
         </div>
-          
-        
-
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Human Resources (HR)</div>
+          </div>
+          <div class="content">
+            HR Generalist, HR Manager, Recruiter, Talent Acquisition Specialist,
+            Payroll Specialist, Employee Relations Manager, Learning &
+            Development Coordinator, Compensation & Benefits Analyst, HR
+            Consultant And Diversity & Inclusion Manager
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Finance & Accounting</div>
+          </div>
+          <div class="content">
+            Financial Analyst, Accountant, Tax Specialist, Auditor, Chief
+            Financial Officer (CFO), Payroll Coordinator, Credit Analyst,
+            Bookkeeper, Financial Controller And Investment Analyst
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Marketing & Advertising</div>
+          </div>
+          <div class="content">
+            Digital Marketing Specialist, Marketing Manager, Social Media
+            Manager, Content Marketing Strategist, SEO Specialist, Brand
+            Manager, Advertising Account Executive, Copywriter, Public Relations
+            Specialist And Market Research Analyst
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Sales & Business Development</div>
+          </div>
+          <div class="content">
+            Sales Manager, Business Development Executive, Account Manager,
+            Sales Consultant, Territory Sales Manager, Sales Engineer, Inside
+            Sales Representative, Key Account Manager, Sales Analyst And
+            Regional Sales Director
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Healthcare & Medical</div>
+          </div>
+          <div class="content">
+            Registered Nurse (RN), Physician, Medical Lab Technician,
+            Pharmacist, Physical Therapist, Radiologic Technologist, Healthcare
+            Administrator, Medical Billing Specialist, Occupational Therapist
+            And Medical Assistant
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Engineering & Manufacturing</div>
+          </div>
+          <div class="content">
+            Mechanical Engineer, Civil Engineer, Electrical Engineer,
+            Manufacturing Engineer, Process Engineer, Quality Control Engineer,
+            Production Manager, Industrial Engineer, Structural Engineer And
+            Project Engineer
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Customer Service & Support</div>
+          </div>
+          <div class="content">
+            Customer Service Representative, Call Center Manager, Technical
+            Support Specialist, Help Desk Analyst, Client Services Manager,
+            Customer Success Specialist, Complaint Resolution Specialist,
+            Customer Support Analyst, Service Delivery Manager And Relationship
+            Manager
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Administration & Office Support</div>
+          </div>
+          <div class="content">
+            Administrative Assistant, Office Manager, Executive Assistant,
+            Receptionist, Data Entry Clerk, Operations Coordinator, Virtual
+            Assistant, Office Coordinator, Facilities Manager And Administrative
+            Coordinator
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Education & Training</div>
+          </div>
+          <div class="content">
+            Teacher, Education Consultant, School Administrator, Curriculum
+            Developer, Academic Advisor, Special Education Teacher, Corporate
+            Trainer, Instructional Designer, Online Course Developer And
+            University Professor
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Legal & Compliance</div>
+          </div>
+          <div class="content">
+            Lawyer, Paralegal, Legal Assistant, Compliance Officer, Corporate
+            Counsel, Contract Manager, Legal Secretary, Regulatory Affairs
+            Specialist, Risk Manager And Intellectual Property Specialist
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Operations & Supply Chain</div>
+          </div>
+          <div class="content">
+            Operations Manager, Supply Chain Manager, Logistics Coordinator,
+            Procurement Specialist, Warehouse Manager, Operations Analyst,
+            Inventory Control Specialist, Supply Chain Analyst, Distribution
+            Manager And Demand Planner
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Project Management</div>
+          </div>
+          <div class="content">
+            Project Manager, Program Manager, Project Coordinator, Project
+            Analyst, Scrum Master, Agile Coach, Portfolio Manager, Construction
+            Project Manager, IT Project Manager And Product Manager
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Creative & Design</div>
+          </div>
+          <div class="content">
+            Graphic Designer, UI/UX Designer, Art Director, Web Designer, Motion
+            Graphics Designer, Creative Director, Interior Designer, Fashion
+            Designer, Multimedia Specialist And Video Editor
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Consulting & Strategy</div>
+          </div>
+          <div class="content">
+            Management Consultant, Strategy Consultant, Business Analyst,
+            Financial Consultant, IT Consultant, Human Resources Consultant,
+            Marketing Consultant, Change Management Consultant, Operations
+            Consultant And Sustainability Consultant
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Retail & E-Commerce</div>
+          </div>
+          <div class="content">
+            Store Manager, E-Commerce Manager, Retail Sales Associate,
+            Merchandise Planner, Visual Merchandiser, Supply Chain Specialist
+            (Retail), Customer Experience Manager, Inventory Manager, Online
+            Sales Manager And Loss Prevention Specialist
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Hospitality & Travel</div>
+          </div>
+          <div class="content">
+            Hotel Manager, Travel Consultant, Event Coordinator, Front Desk
+            Receptionist, Concierge, Catering Manager, Housekeeping Supervisor,
+            Food & Beverage Manager, Tour Guide And Guest Services Manager
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Construction & Real Estate</div>
+          </div>
+          <div class="content">
+            Construction Manager, Architect, Civil Engineer (Construction), Site
+            Supervisor, Property Manager, Real Estate Agent, Quantity Surveyor,
+            Building Inspector, Leasing Consultant And Facilities Coordinator
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Logistics & Transportation</div>
+          </div>
+          <div class="content">
+            Logistics Manager, Transportation Planner, Fleet Manager, Supply
+            Chain Coordinator, Delivery Driver, Freight Broker, Warehouse
+            Supervisor, Import/Export Coordinator, Dispatch Coordinator And
+            Logistics Analyst
+          </div>
+        </div>
+        <div class="explore-us-container">
+          <div class="header">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="title">Media & Communications</div>
+          </div>
+          <div class="content">
+            Journalist, Public Relations Manager, Media Buyer, Content Creator,
+            Communications Specialist, Social Media Coordinator, Broadcast
+            Producer, Video Producer, Copy Editor And Media Planner
+          </div>
+        </div>
       </div>
+    </div>
+    <!-- EXPLORE US SECTION - END -->
 
-  </section>
-
-
-    <!-- Company Section End-->
-
-    <!-- footer section start -->
-
-    <section class="footer">
-      <div class="box-container">
-        <div class="box">
-          <h3>find us here</h3>
+    <!-- ABOUTS US SECTION - START -->
+    <div class="about-us-section">
+      <div class="about-us-content">
+        <h2>About Us</h2>
+        <div class="content">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            deleniti.
+            Welcome To Talent Sync – Your Trusted Partner In Career Connections
+            And Workforce Solutions. Whether You're A Job Seeker Looking To
+            Elevate Your Career Or A Company In Search Of Top-Tier Talent,
+            Talent Sync Is Here To Bridge The Gap. Our Platform Allows Job
+            Seekers To Upload Their CVs Effortlessly, Making It Easier For
+            Employers To Find The Right Fit For Their Teams.
           </p>
-          <div class="share">
-            <a href="#" class="fab fa-facebook"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-            <a href="#" class="fab fa-pinterest"></a>
+          <!-- <p>
+            At Talent Sync, We Don't Just Stop At Job Postings – We Go Beyond
+            With Specialized IT And HR Outsourcing Services. Our Expert
+            Outsourcing Solutions Help Businesses Streamline Their Operations By
+            Handling Their IT And HR Functions, Allowing Them To Focus On Growth
+            And Innovation.
+          </p>
+          <p>
+            For Companies, Talent Sync Is Your Go-To Portal To Share Hiring
+            Requests And Access A Pool Of Qualified Candidates. With Our
+            Industry Expertise And Intuitive Platform, We Make The Hiring
+            Process Seamless, Fast, And Efficient.
+          </p>
+          <p>
+            For Job Seekers, We’re More Than Just A Job Board. We’re Your
+            Gateway To A Brighter Future, Connecting You With Opportunities That
+            Match Your Skills And Aspirations.
+          </p>
+          <p>
+            Explore The Possibilities With Talent Sync Today, And Let Us Sync
+            Talent With Opportunity!
+          </p> -->
+        </div>
+
+        <div class="btn btn-lg btn-secondary">Learn More</div>
+      </div>
+    </div>
+    <!-- ABOUTS US SECTION - END -->
+
+    <!-- REACH US SECTION - START -->
+    <div class="reach-us-section">
+      <div class="form-section">
+        <h2>Drop Us a <span class="accent">Line</span></h2>
+        <p>
+          Reach out to us from our contact form and we will get back to you
+          shortly.
+        </p>
+
+        <form id="contact-form">
+          <div class="form-input">
+            <input type="text" id="firstName" placeholder="First Name *" />
+            <input type="text" id="lastName" placeholder="Last Name *" />
+            <input type="text" id="email" placeholder="Email *" />
+            <input type="file" id="file" placeholder="" />
+            <textarea
+              type="text"
+              id="message"
+              placeholder="Message *"
+            ></textarea>
+          </div>
+
+          <div class="terms-and-conditions">
+            <input type="checkbox" name="" id="terms_and_conditions" />
+            <label for="terms_and_conditions"
+              >I agree to terms and policy</label
+            >
+          </div>
+
+          <div class="btn" id="submit-btn">Send Message</div>
+        </form>
+      </div>
+      <div class="company-contact-details">
+        <div class="detail-section">
+          <div class="icon"></div>
+          <div class="details">
+            <div class="title">Address</div>
+            <div class="content">
+              1234, Street Name, City, State, Country, Zip Code
+            </div>
           </div>
         </div>
-
-        <div class="box" id="contact">
-          <h3>contact us</h3>
-          <a href="" class="links"> Support@talensync.com </a>
-          <a href="" class="links"> www.talentsync.com</a>
-          <a href="" class="links"> 8927132604</a>
-          <a href="" class="links"> E 39 PGF | Greater Noida | G B Nagar </a>
-          
-         
-          
+        <div class="detail-section">
+          <div class="icon"></div>
+          <div class="details">
+            <div class="title">Phone</div>
+            <div class="content">+91 1234567890</div>
+          </div>
         </div>
-      
-    </section>
-
-    <!-- footer section end -->
-    <div class="form-popup" id="myForm">
-      <form action="/action_page.php" class="form-container">
-       <!-- <h1>Login</h1> -->
-    
-       <!-- <label for="email"><b>Email</b></label>
-       <input type="text" placeholder="Enter Email" name="email" required>
-    
-       <label for="psw"><b>Password</b></label>
-       <input type="password" placeholder="Enter Password" name="psw" required>
-    
-       <button type="submit" class="btn">Login</button>
-       <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
-       
-       <form>
-        
-         <h3>GET IN TOUCH</h3>
-         <input type="text" id="name" placeholder="Your Name" required>
-         <input type="email" id="email" placeholder="Email id" required>
-         <input type="text" id="phone" placeholder="Mobile Number" required>
-         <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
-         <button type="submit">Send</button>
-         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-       </form>
-     
-     </form> 
-    
-     
-    
-    
+        <div class="detail-section">
+          <div class="icon"></div>
+          <div class="details">
+            <div class="title">E-mail</div>
+            <div class="content">talentsync@solutions.in</div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- REACH US SECTION - END -->
 
-    <!-- swiper js cdn link -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- custom js file -->
-    <script src="script.js"></script>
+    <!-- FOOTER SECTION - START -->
+    <div class="footer-section">
+      <div class="footer-section-content">
+        <div class="social-section">
+          <div class="company-logo">
+            <img src="./images/TalentSync_logo.png" alt="" />
+            <div class="company-name">TalentSync</div>
+          </div>
+          <div class="description">
+            Find your next career opportunity and connect with like-minded
+            individuals.
+          </div>
+          <div class="icons">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_1_27"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="6"
+                y="6"
+                width="18"
+                height="18"
+              >
+                <rect x="6" y="6" width="18" height="18" fill="#C4C4C4" />
+              </mask>
+              <g mask="url(#mask0_1_27)">
+                <path
+                  d="M16.4578 6.06053C15.0727 6.26092 13.9828 7.01326 13.4063 8.16639C12.9914 9.00311 12.907 9.51287 12.907 11.2461V12.473H11.7152C11.0543 12.473 10.4813 12.4871 10.4356 12.5047C10.3863 12.5258 10.3125 12.575 10.2738 12.6172C10.2 12.6945 10.2 12.7191 10.2 14.3152C10.2 15.7988 10.207 15.9429 10.2633 16.0097C10.3828 16.1609 10.4285 16.1644 11.6906 16.1644H12.907V19.9613V23.7582L13.009 23.8707L13.1109 23.9867L14.7492 23.9972C16.1942 24.0043 16.4016 24.0008 16.4965 23.9515C16.7145 23.839 16.7039 24.0148 16.7039 19.9086V16.1644H18.1102C19.1227 16.1644 19.5375 16.1539 19.6043 16.1222C19.7977 16.0344 19.7977 16.0203 19.7977 14.3047V12.7191L19.6957 12.6066L19.5938 12.4906L18.1453 12.4801L16.7004 12.4695L16.7109 11.334L16.7215 10.2019L16.827 9.99451C16.943 9.76951 17.1363 9.61834 17.3965 9.54803C17.4703 9.52693 17.9906 9.50584 18.5496 9.49881C19.1121 9.48826 19.6078 9.4742 19.65 9.46365C19.6957 9.45311 19.7731 9.40389 19.8188 9.35467L19.9031 9.26326V7.74451C19.9031 6.25389 19.9031 6.22576 19.8293 6.14842C19.7906 6.10623 19.7168 6.05701 19.6676 6.03592C19.527 5.98318 16.8516 6.00428 16.4578 6.06053Z"
+                  fill="#7B66FF"
+                />
+              </g>
+            </svg>
+
+            <svg
+              width="1"
+              height="32"
+              viewBox="0 0 1 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="0.5"
+                y1="2.18557e-08"
+                x2="0.499999"
+                y2="32"
+                stroke="#113CA5"
+              />
+            </svg>
+
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.6801 22.0167V22.0162H21.6834V17.1751C21.6834 14.8068 21.1735 12.9824 18.4048 12.9824C17.0738 12.9824 16.1806 13.7128 15.816 14.4053H15.7775V13.2035H13.1523V22.0162H15.8858V17.6525C15.8858 16.5035 16.1036 15.3925 17.5265 15.3925C18.9284 15.3925 18.9493 16.7037 18.9493 17.7262V22.0167H21.6801Z"
+                fill="#7B66FF"
+              />
+              <path
+                d="M8.61719 13.2041H11.354V22.0168H8.61719V13.2041Z"
+                fill="#7B66FF"
+              />
+              <path
+                d="M9.98354 8.59766C9.10849 8.59766 8.39844 9.30771 8.39844 10.1828C8.39844 11.0578 9.10849 11.7827 9.98354 11.7827C10.8586 11.7827 11.5686 11.0578 11.5686 10.1828C11.5681 9.30771 10.858 8.59766 9.98354 8.59766V8.59766Z"
+                fill="#7B66FF"
+              />
+            </svg>
+
+            <svg
+              width="1"
+              height="32"
+              viewBox="0 0 1 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="0.5"
+                y1="2.18557e-08"
+                x2="0.499999"
+                y2="32"
+                stroke="#113CA5"
+              />
+            </svg>
+
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_1_37"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="7"
+                y="7"
+                width="16"
+                height="17"
+              >
+                <rect
+                  x="7.05884"
+                  y="7.15747"
+                  width="15.8824"
+                  height="15.8824"
+                  fill="#C4C4C4"
+                />
+              </mask>
+              <g mask="url(#mask0_1_37)">
+                <path
+                  d="M22.9412 10.1744C22.3506 10.4335 21.7212 10.6052 21.0651 10.6886C21.7401 10.2856 22.2553 9.65228 22.4975 8.88893C21.8681 9.26415 21.1733 9.52919 20.4328 9.6771C19.8352 9.04081 18.9835 8.64673 18.0544 8.64673C16.2517 8.64673 14.8005 10.1099 14.8005 11.9036C14.8005 12.1617 14.8223 12.4099 14.8759 12.6461C12.169 12.5141 9.77373 11.2167 8.16465 9.24033C7.88373 9.72772 7.71895 10.2856 7.71895 10.8861C7.71895 12.0138 8.29965 13.0134 9.16524 13.5921C8.64211 13.5822 8.12891 13.4303 7.69413 13.1911C7.69413 13.201 7.69413 13.2139 7.69413 13.2268C7.69413 14.8091 8.82277 16.1233 10.3028 16.4261C10.0378 16.4986 9.74891 16.5333 9.44913 16.5333C9.24068 16.5333 9.03024 16.5214 8.8327 16.4777C9.25457 17.7672 10.4517 18.7151 11.8752 18.7459C10.7674 19.6125 9.36079 20.1346 7.83807 20.1346C7.57104 20.1346 7.31494 20.1227 7.05884 20.09C8.50115 21.0201 10.2105 21.5511 12.0538 21.5511C18.0455 21.5511 21.3212 16.5879 21.3212 12.2858C21.3212 12.1418 21.3162 12.0029 21.3093 11.8649C21.9555 11.4063 22.4985 10.8335 22.9412 10.1744Z"
+                  fill="#7B66FF"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="links-section">
+          <div class="header">Help Links</div>
+          <div class="links">
+            <div class="link">About Us</div>
+            <div class="link">Services</div>
+            <div class="link">Privacy Policy</div>
+            <div class="link">Terms & Condition</div>
+          </div>
+        </div>
+        <div class="subscribe-section">
+          <div class="header">Subscribe Our newsletter</div>
+          <div class="description">
+            Get the freshest job news and articles delivered to your inbox every
+            week.
+          </div>
+          <div class="subscribe-input-section">
+            <input type="text" placeholder="Enter your email" />
+            <div class="btn">Submit</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright-section">
+        © 2023 All Right Reserved Creativemouse.co
+      </div>
+    </div>
+    <!-- FOOTER SECTION - END -->
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script>
+      function toggleMenu() {
+        var overlay = document.getElementById("nav-links");
+        overlay.classList.toggle("active");
+      }
+
+      (function () {
+        emailjs.init("sZurRextZvhbsHxiP"); // Replace 'YOUR_USER_ID' with your actual EmailJS user ID
+      })();
+
+      document
+        .getElementById("submit-btn")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+
+          // Get form values
+          const firstName = document.getElementById("firstName").value;
+          const lastName = document.getElementById("lastName").value;
+          const email = document.getElementById("email").value;
+          const message = document.getElementById("message").value;
+          const fileInput = document.getElementById("file");
+          const file = fileInput.files[0];
+
+          // Ensure the terms checkbox is checked
+          const termsAccepted = document.getElementById(
+            "terms_and_conditions"
+          ).checked;
+          if (!termsAccepted) {
+            alert("Please agree to the terms and policy.");
+            return;
+          }
+
+          // Check if a file was selected
+          if (!file) {
+            alert("Please select a file to attach.");
+            return;
+          }
+
+          // Convert the file to Base64 using FileReader
+          const reader = new FileReader();
+          reader.readAsDataURL(file);
+
+          reader.onload = function () {
+            const base64File = reader.result.split(",")[1]; // Get Base64 string without metadata
+
+            // EmailJS parameters
+            const emailParams = {
+              // firstName: firstName,
+              // lastName: lastName,
+              from_name: firstName + ", " + lastName,
+              email_id: email,
+              message: message,
+              attachment: base64File, // The base64-encoded file
+              filename: file.name, // File name
+            };
+
+            // Send email with EmailJS
+            emailjs
+              .send("service_29bj566", "template_5sawk7e", emailParams)
+              .then(
+                function (response) {
+                  console.log(
+                    "Email sent successfully!",
+                    response.status,
+                    response.text
+                  );
+                  alert("Message sent successfully!");
+                },
+                function (error) {
+                  console.log("Failed to send email.", error);
+                  alert("Failed to send message. Please try again.");
+                }
+              );
+          };
+
+          reader.onerror = function (error) {
+            console.log("Error reading file:", error);
+            alert("Error reading the selected file.");
+          };
+        });
+    </script>
   </body>
 </html>
